@@ -1,3 +1,5 @@
+// 导入音频文件，让 Vite 能够正确打包
+import rollMp3 from '../assets/roll.mp3';
 
 class SoundManager {
   private bgm: HTMLAudioElement | null = null;
@@ -10,7 +12,7 @@ class SoundManager {
     this.sounds = {
       click: new Audio('https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3'),
       // roll: new Audio('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3'),
-      roll: new Audio('./assets/roll.mp3'),
+      roll: new Audio(rollMp3),
       win: new Audio('https://assets.mixkit.co/active_storage/sfx/2019/2019-preview.mp3'),
     };
     
@@ -19,7 +21,7 @@ class SoundManager {
     if (this.bgm) this.bgm.loop = true;
 
     // 抽奖进行中的悬念音乐 (更换为节奏感更强的 Drum Beat)
-    this.rollingBgm = new Audio('./assets/roll.mp3');
+    this.rollingBgm = new Audio(rollMp3);
     if (this.rollingBgm) {
       this.rollingBgm.loop = true;
     }
