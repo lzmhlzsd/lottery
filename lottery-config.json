@@ -18,12 +18,12 @@
     {
       "name": "第四轮抽奖",
       "winnerCount": 5,
-      "presetWinners": ["2","4","14","19","22"]
+      "presetWinners": ["2","3","14","19","22"]
     },
     {
       "name": "第五轮抽奖",
       "winnerCount": 5,
-      "presetWinners": []
+      "presetWinners": ["10", "11", "35", "37", "40"]
     }
   ]
 }
