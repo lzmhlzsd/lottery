@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Lottery System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 10px rgba(234, 179, 8, 0.5); }
+      50% { text-shadow: 0 0 25px rgba(234, 179, 8, 0.8); }
+    }
+    .animate-glow { animation: glow 2s ease-in-out infinite; }
+    
+    /* 3D 翻牌动画相关样式 */
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    
+    @keyframes flip-in {
+      from { transform: rotateY(90deg); opacity: 0; }
+      to { transform: rotateY(0deg); opacity: 1; }
+    }
+    .animate-flip-card {
+      animation: flip-in 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+  </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DUIsqXLf.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-yellow-500 selection:text-slate-900 overflow-x-hidden">
+  <div id="root"></div>
+</body>
+</html>
