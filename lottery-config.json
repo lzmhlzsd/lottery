@@ -1,0 +1,29 @@
+{
+  "rounds": [
+    {
+      "name": "第一轮抽奖",
+      "winnerCount": 6,
+      "presetWinners": ["23","24","25","28","39","42"]
+    },
+    {
+      "name": "第二轮抽奖",
+      "winnerCount": 6,
+      "presetWinners": ["7","8","12","15","16","20"]
+    },
+    {
+      "name": "第三轮抽奖",
+      "winnerCount": 5,
+      "presetWinners": ["26","30","38","41","36"]
+    },
+    {
+      "name": "第四轮抽奖",
+      "winnerCount": 5,
+      "presetWinners": ["2","4","14","19","22"]
+    },
+    {
+      "name": "第五轮抽奖",
+      "winnerCount": 5,
+      "presetWinners": []
+    }
+  ]
+}
